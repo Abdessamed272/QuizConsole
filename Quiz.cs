@@ -9,18 +9,18 @@ namespace QuizApp;
 public class Quiz
 {
     public static int NumberOfRealisedTest = 0;
-    public string?[,] QuestionsAndAnswer { get; set; }
+    public List<List<string>> QuestionsAndAnswer { get; set; }
     public int SuccessPercontage { get; set; }
 
     public Quiz()
     {
         NumberOfRealisedTest++;
-        QuestionsAndAnswer =  new string[10,6];
+        QuestionsAndAnswer = new List<List<string>>(10) ;
     }
 
     public bool CheckAnswer(int QuestionNumber, string CandidateAnswer)
     {
-        if (CandidateAnswer == QuestionsAndAnswer[QuestionNumber,5])
+        if (CandidateAnswer == QuestionsAndAnswer[QuestionNumber][5])
             return true;
         else
             return false;
@@ -38,11 +38,11 @@ public class Quiz
         for (var i = 0; i < 10; i++)
         {
             //Console.WriteLine("Question number {0} : ", i+1);
-            Console.WriteLine(QuestionsAndAnswer[i,0]);
+            Console.WriteLine(QuestionsAndAnswer[i][0]); //[i,0]);
 
             for (var j = 1; j <=4; j++)
             {
-                Console.WriteLine("{0} :  {1}", j, QuestionsAndAnswer[i,j]);
+                Console.WriteLine("{0} :  {1}", j, QuestionsAndAnswer[i][j]);
             }
 
             Console.WriteLine("choose the correct answer by typing 1 or 2 or 3 or 4 ");
@@ -66,15 +66,15 @@ public class Quiz
 
             Console.WriteLine("Enter the new question");
             string? NewQuestion = Console.ReadLine();
-             QuestionsAndAnswer[IndexQuestionEdit, 0] = NewQuestion;
+             QuestionsAndAnswer[IndexQuestionEdit][0] = NewQuestion;
 
             Console.WriteLine("Enter the 4 possible answers");
             for (int i = 0; i < 4; i++)
             {
-                QuestionsAndAnswer[IndexQuestionEdit, i] = Console.ReadLine();
+                QuestionsAndAnswer[IndexQuestionEdit][i] = Console.ReadLine();
             }
             Console.WriteLine("Whitch one is the correct answer? enter 1 or 2 or 3 or 4");
-            QuestionsAndAnswer[IndexQuestionEdit, 4] = Console.ReadLine();
+            QuestionsAndAnswer[IndexQuestionEdit][4] = Console.ReadLine();
 
             Console.WriteLine("The question {0} was updated!",IndexQuestionEdit);
 
@@ -86,10 +86,10 @@ public class Quiz
         foreach (var correctanswer in user.IndexOfCorrectAnswer)
         {
 
-            Console.WriteLine("Question {0} : ", correctanswer, QuestionsAndAnswer[correctanswer,0 ]);
-            Console.WriteLine("Your Answer {0} is correct ", QuestionsAndAnswer[correctanswer, 5]);
+            Console.WriteLine("Question {0} : ", correctanswer, QuestionsAndAnswer[correctanswer][0]);
+            Console.WriteLine("Your Answer {0} is correct ", QuestionsAndAnswer[correctanswer][5]);
         }
-        Console.WriteLine("Your Score is {0} / {1} ", user.Score, QuestionsAndAnswer.GetLength(0));
+        Console.WriteLine("Your Score is {0} / {1} ", user.Score, QuestionsAndAnswer.Count());
 
     }
 }
