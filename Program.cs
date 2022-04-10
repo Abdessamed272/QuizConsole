@@ -9,100 +9,125 @@ Quiz Quiz1 = new Quiz();
 // Question 1
 
 
-Quiz1.QuestionsAndAnswer[0] = new List<string> {
+Quiz1.QuestionsAndAnswer.Insert(0, new List<string> {
     "Question1: CLR signifie",
         "1: Common Local Runtime",
         "2: Common Language Runtime",
         "3: Common Language Realtime",
         "4: Common Local Realtime",
-        "2" };
+        "2" });
 
-Quiz1.QuestionsAndAnswer[0][1] = "1: Common Local Runtime";
-Quiz1.QuestionsAndAnswer[0][2] = "2: Common Language Runtime";
-Quiz1.QuestionsAndAnswer[0][3] = "3: Common Language Realtime";
-Quiz1.QuestionsAndAnswer[0][4] = "4: Common Local Realtime";
-Quiz1.QuestionsAndAnswer[0][5] = "2";
+
 
 //Question 2
-Quiz1.QuestionsAndAnswer[0][0] = "CLR est responsable de __________ ?";
-Quiz1.QuestionsAndAnswer[1][1] = "Garbage-collector";
-Quiz1.QuestionsAndAnswer[1][2] = "Sécurité d’accès au code";
-Quiz1.QuestionsAndAnswer[1][3] = "Vérification du code";
-Quiz1.QuestionsAndAnswer[1][4] = "Tout les réponses sont vrais";
-Quiz1.QuestionsAndAnswer[1][5] = "4";
+Quiz1.QuestionsAndAnswer.Insert(1, new List<string>
+{
+    "CLR est responsable de __________ ?",
+    "Garbage-collector",
+"Sécurité d’accès au code",
+"Vérification du code",
+"Tout les réponses sont vrais",
+"4",
+});
+
 
 
 //Question 3
-Quiz1.QuestionsAndAnswer[2][0] = "GAC signifie __________ ?";
-Quiz1.QuestionsAndAnswer[2][1] = "1: Global Assembly Cache";
-Quiz1.QuestionsAndAnswer[2][2] = "2: Global Assembly Store";
-Quiz1.QuestionsAndAnswer[2][3] = "3: Garbage Assemble Cache";
-Quiz1.QuestionsAndAnswer[2][4] = "4: Global Advanced Cache";
-Quiz1.QuestionsAndAnswer[2][5] = "1";
+Quiz1.QuestionsAndAnswer.Insert(2, new List<string>
+{
+    "GAC signifie __________ ?",
+"1: Global Assembly Cache",
+"2: Global Assembly Store",
+"3: Garbage Assemble Cache",
+"4: Global Advanced Cache",
+    "1"
+
+});
 
 //Question 4
-Quiz1.QuestionsAndAnswer[3][0] = "Question 4: Que fait GAC ?";
-Quiz1.QuestionsAndAnswer[3][1] = "1: Stocke les « assembly » .net partagés entre plusieurs applications.";
-Quiz1.QuestionsAndAnswer[3][2] = "2: Stocke les dll globales.";
-Quiz1.QuestionsAndAnswer[3][3] = "3: Mettre en cache les données d’application.";
-Quiz1.QuestionsAndAnswer[3][4] = "4: Aucune de ces réponses";
-Quiz1.QuestionsAndAnswer[3][5] = "1";
+Quiz1.QuestionsAndAnswer.Insert(3, new List<string>
 
+    {
+"Question 4: Que fait GAC ?",
+"1: Stocke les « assembly » .net partagés entre plusieurs applications.",
+"2: Stocke les dll globales.",
+"3: Mettre en cache les données d’application.",
+"4: Aucune de ces réponses",
+"1"
+});
 
 //Question 5
-Quiz1.QuestionsAndAnswer[4][0] = "Question 5: Quels sont les types de JIT?";
-Quiz1.QuestionsAndAnswer[4][1] = "1: Pre-JIT";
-Quiz1.QuestionsAndAnswer[4][2] = "2: Econo-JT";
-Quiz1.QuestionsAndAnswer[4][3] = "3: Normal-JIT";
-Quiz1.QuestionsAndAnswer[4][4] = "4: Tout les réponses sont vrais";
-Quiz1.QuestionsAndAnswer[4][5] = "4";
+Quiz1.QuestionsAndAnswer.Insert(4, new List<string>
+    {
+"Question 5: Quels sont les types de JIT?",
+"1: Pre-JIT",
+"2: Econo-JT",
+"3: Normal-JIT",
+"4: Tout les réponses sont vrais",
+"4"
+});
+
 
 
 //Question 6
-Quiz1.QuestionsAndAnswer[5][0] = "Question 6: Garbage collector(GC) comprend _______ générations.";
-Quiz1.QuestionsAndAnswer[5][1] = "1: Un";
-Quiz1.QuestionsAndAnswer[5][2] = "2: Deux";
-Quiz1.QuestionsAndAnswer[5][3] = "3: Trois";
-Quiz1.QuestionsAndAnswer[5][4] = "4: Cinq";
-Quiz1.QuestionsAndAnswer[5][5] = "3";
+Quiz1.QuestionsAndAnswer.Insert(5, new List<string>
+{
+"Question 6: Garbage collector(GC) comprend _______ générations.",
+"1: Un",
+"2: Deux",
+"3: Trois",
+"4: Cinq",
+"3"
+});
 
 
 
 //Question 7
-Quiz1.QuestionsAndAnswer[6][0] = "Comment forcer le garbage-collector à s’exécuter?";
-Quiz1.QuestionsAndAnswer[6][1] = "1: Utilisation de la méthode GC.Run()";
-Quiz1.QuestionsAndAnswer[6][2] = "2: Utilisation de la méthode GC.Collect()";
-Quiz1.QuestionsAndAnswer[6][3] = "3: Utilisation de la méthode GC.Collection()";
-Quiz1.QuestionsAndAnswer[6][4] = "4: Utilisation de la méthode GC.Finalize()";
-Quiz1.QuestionsAndAnswer[6][5] = "2";
+Quiz1.QuestionsAndAnswer.Insert(6, new List<string>
+{
+
+"Comment forcer le garbage-collector à s’exécuter?",
+"1: Utilisation de la méthode GC.Run()",
+ "2: Utilisation de la méthode GC.Collect()",
+"3: Utilisation de la méthode GC.Collection()",
+"4: Utilisation de la méthode GC.Finalize()",
+"2",
+});
 
 
 //Question 8
-Quiz1.QuestionsAndAnswer[7][0] = "IL en.Net signifie ________?";
-Quiz1.QuestionsAndAnswer[7][1] = "1: Intermediate Language";
-Quiz1.QuestionsAndAnswer[7][2] = "2: International Language";
-Quiz1.QuestionsAndAnswer[7][3] = "3: Interoperate Language";
-Quiz1.QuestionsAndAnswer[7][4] = "4: Intermediate Local";
-Quiz1.QuestionsAndAnswer[7][5] = "1";
+Quiz1.QuestionsAndAnswer.Insert(7, new List<string>
 
+{
+    "IL en.Net signifie ________?",
+    "1: Intermediate Language",
+    "2: International Language",
+    "3: Interoperate Language",
+    "4: Intermediate Local",
+    "1"
+});
 
 //Question 9
-Quiz1.QuestionsAndAnswer[8][0] = "Quel outil est utilisé pour voir le code IL?";
-Quiz1.QuestionsAndAnswer[8][1] = "1: Util.exe";
-Quiz1.QuestionsAndAnswer[8][2] = "2: IL.exe";
-Quiz1.QuestionsAndAnswer[8][3] = "3: GACUtil.exe";
-Quiz1.QuestionsAndAnswer[8][4] = "4: IDASM.EXE";
-Quiz1.QuestionsAndAnswer[8][5] = "4";
-
+Quiz1.QuestionsAndAnswer.Insert(8, new List<string>
+{
+ "Quel outil est utilisé pour voir le code IL?",
+"1: Util.exe",
+"2: IL.exe",
+"3: GACUtil.exe",
+"4: IDASM.EXE",
+"4"
+});
 
 //Question 10
-Quiz1.QuestionsAndAnswer[9][0] = "Question 10: Que signifie le terme « boxing » en .net?";
-Quiz1.QuestionsAndAnswer[9][1] = "1: Convertit le type de valeur en objet";
-Quiz1.QuestionsAndAnswer[9][2] = "2: Convertit le type de référence en type de valeur";
-Quiz1.QuestionsAndAnswer[9][3] = "3: Convertit le type primitif en type valeur";
-Quiz1.QuestionsAndAnswer[9][4] = "4: Aucune de ces réponses n’est vraie.";
-Quiz1.QuestionsAndAnswer[9][5] = "1";
-
+Quiz1.QuestionsAndAnswer.Insert(9, new List<string>
+{
+"Question 10: Que signifie le terme « boxing » en .net?",
+"1: Convertit le type de valeur en objet",
+"2: Convertit le type de référence en type de valeur",
+"3: Convertit le type primitif en type valeur",
+"4: Aucune de ces réponses n’est vraie.",
+    "1"
+});
 
 Console.WriteLine("press U to login as a user or A to login as an admin!");
 string PressedKey = Console.ReadLine().ToLower();
