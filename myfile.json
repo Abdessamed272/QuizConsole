@@ -1,0 +1,10 @@
+{
+  "MyStringProperty": "StringValue",
+  "MyIntegerProperty": 1,
+  
+  "MyListProperty": [
+    1,
+    2,
+    3
+  ]
+}

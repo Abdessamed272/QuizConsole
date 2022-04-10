@@ -1,0 +1,32 @@
+{
+
+  "MyListProperty": 
+
+    {
+
+      "QCM1": {
+        "Question": "Question1: Que CLR signifie",
+        "Answers": [
+          "1: Common Local Runtime",
+          "2: Common Language Runtime",
+          "3: Common Language Realtime",
+          "4: Common Local Realtime"
+        ],
+        "GoodAnswer": 2
+      }
+    
+      ,
+    
+      "QCM2": {
+        "Question": "CLR est responsable de _______ ?",
+        "Answers": [
+          "Garbage-collector",
+          "Sécurité d’accès au code",
+          "Vérification du code",
+          "Tout les réponses sont vrais"
+        ],
+        "GoodAnswer": 4
+      }
+    }
+  
+}

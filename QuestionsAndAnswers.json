@@ -1,0 +1,106 @@
+{
+  "AllQCM": {
+    "QCM1": {
+      "Question": "Question1: Que CLR signifie",
+      "Answers": [
+        "1: Common Local Runtime",
+        "2: Common Language Runtime",
+        "3: Common Language Realtime",
+        "4: Common Local Realtime"
+      ],
+      "GoodAnswer": 2
+    },
+
+    "QCM2": {
+      "Question": "CLR est responsable de _______ ?",
+      "Answers": [
+        "Garbage-collector",
+        "Sécurité d’accès au code",
+        "Vérification du code",
+        "Tout les réponses sont vrais"
+      ],
+      "GoodAnswer": 4
+    },
+    "QCM3": {
+      "Question": "GAC signifie __________ ?",
+      "Answers": [
+        "1: Global Assembly Cache",
+        "2: Global Assembly Store",
+        "3: Garbage Assemble Cache",
+        "4: Global Advanced Cache"
+      ],
+      "GoodAnswer": 1
+    },
+    "QCM4": {
+      "Question": "Question 4: Que fait GAC ?",
+      "Answers": [
+        "1: Stocke les « assembly » .net partagés entre plusieurs applications.",
+        "2: Stocke les dll globales.",
+        "3: Mettre en cache les données d’application.",
+        "4: Aucune de ces réponses"
+      ],
+      "GoodAnswer": 1
+    },
+    "QCM5": {
+      "Question": "Question 5: Quels sont les types de JIT?",
+      "Answers": [
+        "1: Pre-JIT",
+        "2: Econo-JT",
+        "3: Normal-JIT",
+        "4: Tout les réponses sont vrais"
+      ],
+      "GoodAnswer": 4
+    },
+    "QCM6": {
+      "Question": "Question 6: Garbage collector(GC) comprend _______ générations.",
+      "Answers": [
+        "1: Un",
+        "2: Deux",
+        "3: Trois",
+        "4: Cinq"
+      ],
+      "GoodAnswer": 3
+    },
+    "QCM7": {
+      "Question": "Comment forcer le garbage-collector à s’exécuter?",
+      "Answers": [
+        "1: Utilisation de la méthode GC.Run()",
+        "2: Utilisation de la méthode GC.Collect()",
+        "3: Utilisation de la méthode GC.Collection()",
+        "4: Utilisation de la méthode GC.Finalize()"
+      ],
+      "GoodAnswer": 2
+    },
+    "QCM8": {
+      "Question": "IL en.Net signifie ________?",
+      "Answers": [
+        "1: Intermediate Language",
+        "2: International Language",
+        "3: Interoperate Language",
+        "4: Intermediate Local"
+      ],
+      "GoodAnswer": 1
+    },
+    "QCM9": {
+      "Question": "Quel outil est utilisé pour voir le code IL?",
+      "Answers": [
+        "1: Util.exe",
+        "2: IL.exe",
+        "3: GACUtil.exe",
+        "4: IDASM.EXE"
+      ],
+      "GoodAnswer": 4
+    },
+    "QCM10": {
+      "Question": "Question 10: Que signifie le terme « boxing » en .net?",
+      "Answers": [
+        "1: Convertit le type de valeur en objet",
+        "2: Convertit le type de référence en type de valeur",
+        "3: Convertit le type primitif en type valeur",
+        "4: Aucune de ces réponses n’est vraie."
+      ],
+      "GoodAnswer": 1
+    }
+  }
+
+}
